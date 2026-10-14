@@ -1,0 +1,267 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: John Doe
+  headline: Senior Data Engineer — Python, SQL, Airflow, dbt, Snowflake, BigQuery
+  location: Denver, CO
+  email: john.doe@example.com
+  photo:
+  phone: "+12025550173"
+  social_networks:
+    - network: LinkedIn
+      username: johndoe
+    - network: GitHub
+      username: johndoe
+  custom_connections:
+  sections:
+    Summary:
+      - Senior data engineer with 8+ years building and operating data platforms, warehouses, and analytics systems, scaling a B2B SaaS data platform from terabytes to petabytes for 500+ customers.
+      - Hands-on across modern data platforms — Snowflake ingestion, BigQuery, Databricks, Redshift, Looker, and dbt — with strong Python and Kotlin services and Terraform-managed infrastructure.
+      - "Built governance and reliability foundations: a Kotlin metadata service enforcing schema contracts, an embedded data catalog, automated dbt testing, and an AI-assisted triage workflow that cut manual failure resolution by 90%."
+    experience:
+      - company: Acme Corp
+        position: Senior Data Engineer
+        start_date: 2022-03
+        end_date: present
+        location: Remote
+        summary: Lead data platform engineering for scalable Airflow, BigQuery, dbt, Snowflake, and Looker capabilities supporting over 500 customers.
+        highlights:
+          - Architected and delivered scalable, single-tenant ELT pipelines with Python, Apache Airflow, dbt, and BigQuery, scaling platform processing from terabytes to petabytes.
+          - Productionized a partner Snowflake ingestion pipeline — 12 tables, ~50GB historical backfill and ~1GB daily — with dbt parity validation on the audit_helper plugin.
+          - Built and extended end-to-end destination connectors across Snowflake, BigQuery, Redshift, Databricks, Azure, S3, Power BI, and Looker, delivering curated warehouse data to 300+ customer destinations.
+          - Built Looker analytics into the product — LookML models and embedded dashboards — and worked on the Kotlin metadata service that enforces schema contracts and generates an embedded data catalog.
+          - Developed a dbt-based data quality and testing framework in Cloud Run with an AI-assisted triage workflow that reduced manual failure resolution by 90%.
+          - Provisioned platform infrastructure with Terraform and ran containerized workloads on GKE; mentored teammates and drove data modeling standards through the platform guild.
+      - company: Globex Health
+        position: Data Engineer
+        start_date: 2019-05
+        end_date: 2022-03
+        location: Denver, CO
+        summary: Built ETL automation and reporting systems supporting payment calculations and sales analytics.
+        highlights:
+          - Designed and maintained ETL pipelines integrating disparate data sources to support large-scale payment calculations.
+          - Built SSRS and Power BI reporting — dashboards and scorecards — and automated reporting workflows with stored procedures, Python, and pandas.
+      - company: Initech
+        position: Business Intelligence Developer
+        start_date: 2015-06
+        end_date: 2019-05
+        location: Denver, CO
+        summary: Delivered business intelligence and analytics for operational performance and executive decision making.
+        highlights:
+          - Built SQL audit tools with recursive CTEs and window functions to surface compliance and quality insights.
+          - Partnered with application teams to design data marts and trained end users on reporting and visualization tools.
+    Skills:
+      - label: Languages
+        details: Python, SQL, Kotlin, TypeScript
+      - label: Data Platforms
+        details: Snowflake, Google BigQuery, Databricks, Redshift, Apache Spark, Google Cloud Platform
+      - label: Orchestration & Transformation
+        details: Apache Airflow, Google Cloud Composer, dbt, event-driven pipelines
+      - label: BI & Analytics
+        details: Looker (LookML, embedded analytics), Power BI, SSRS
+      - label: Infrastructure & Delivery
+        details: Terraform, GitHub Actions, CI/CD, GKE, Docker
+      - label: Governance & Quality
+        details: schema contracts, metadata service, data catalog, dbt testing, cost optimization
+      - label: Integration
+        details: REST APIs, gRPC, streaming JSON ingestion, Selenium, Microsoft Graph API
+    projects:
+      - name: File Upload Pipeline
+        highlights:
+          - Built a self-serve, event-driven file upload pipeline with React/TypeScript, secure signed URLs, Cloud Run parsing, Pub/Sub eventing, Airflow orchestration, and dbt-managed BigQuery models; scales from 1 to 10,000 files per run and became a sellable connector.
+      - name: Reverse ETL Destination Connector Platform
+        highlights:
+          - Built and extended destination connectors end to end across Snowflake, BigQuery, Redshift, Databricks, Azure, S3, Power BI, and Looker, delivering curated warehouse data to 300+ customer destinations.
+      - name: Apache Airflow / Cloud Composer Implementation
+        highlights:
+          - Led migration from a homegrown orchestrator to Apache Airflow on Google Cloud Composer, building the platform from zero with dynamic pipeline generation and Terraform-managed observability.
+    Education:
+      - institution: State University
+        area: Computer Science
+        degree: Bachelor of Science
+        location: Denver, CO
+
+design:
+  theme: engineeringresumes
+  # page:
+  #   size: us-letter
+  #   top_margin: 0.7in
+  #   bottom_margin: 0.7in
+  #   left_margin: 0.7in
+  #   right_margin: 0.7in
+  #   show_footer: true
+  #   show_top_note: true
+  # colors:
+  #   body: rgb(0, 0, 0)
+  #   name: rgb(0, 79, 144)
+  #   headline: rgb(0, 79, 144)
+  #   connections: rgb(0, 79, 144)
+  #   section_titles: rgb(0, 79, 144)
+  #   links: rgb(0, 79, 144)
+  #   footer: rgb(128, 128, 128)
+  #   top_note: rgb(128, 128, 128)
+  typography:
+    line_spacing: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+    font_family: DejaVu Sans Mono
+    font_size:
+      body: 10pt
+      name: 30pt
+      headline: 10pt
+      connections: 10pt
+      section_titles: 1.4em
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+    bold:
+      name: true
+      headline: false
+      connections: false
+      section_titles: true
+  templates:
+    education_entry:
+      main_column: |-
+        **INSTITUTION**, AREA
+        **DEGREE**
+      degree_column: ''
+      date_and_location_column: |-
+        LOCATION
+        DATE
+  # links:
+  #   underline: false
+  #   show_external_link_icon: false
+  # header:
+  #   alignment: center
+  #   photo_width: 3.5cm
+  #   photo_position: left
+  #   photo_space_left: 0.4cm
+  #   photo_space_right: 0.4cm
+  #   space_below_name: 0.7cm
+  #   space_below_headline: 0.7cm
+  #   space_below_connections: 0.7cm
+  #   connections:
+  #     phone_number_format: national
+  #     hyperlink: true
+  #     show_icons: true
+  #     display_urls_instead_of_usernames: false
+  #     separator: ''
+  #     space_between_connections: 0.5cm
+  # section_titles:
+  #   type: with_partial_line
+  #   line_thickness: 0.5pt
+  #   space_above: 0.5cm
+  #   space_below: 0.3cm
+  # sections:
+  #   allow_page_break: true
+  #   space_between_regular_entries: 1.2em
+  #   space_between_text_based_entries: 0.3em
+  #   show_time_spans_in:
+  #     - experience
+  # entries:
+  #   date_and_location_width: 4.15cm
+  #   side_space: 0.2cm
+  #   space_between_columns: 0.1cm
+  #   allow_page_break: false
+  #   short_second_row: true
+  #   summary:
+  #     space_above: 0cm
+  #     space_left: 0cm
+  #   highlights:
+  #     bullet: •
+  #     nested_bullet: •
+  #     space_left: 0.15cm
+  #     space_above: 0cm
+  #     space_between_items: 0cm
+  #     space_between_bullet_and_text: 0.5em
+  # templates:
+  #   footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
+  #   top_note: '*LAST_UPDATED CURRENT_DATE*'
+  #   single_date: MONTH_ABBREVIATION YEAR
+  #   date_range: START_DATE – END_DATE
+  #   time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+  #   one_line_entry:
+  #     main_column: '**LABEL:** DETAILS'
+  #   education_entry:
+  #     main_column: |-
+  #       **INSTITUTION**, AREA
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     degree_column: '**DEGREE**'
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   normal_entry:
+  #     main_column: |-
+  #       **NAME**
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   experience_entry:
+  #     main_column: |-
+  #       **COMPANY**, POSITION
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   publication_entry:
+  #     main_column: |-
+  #       **TITLE**
+  #       SUMMARY
+  #       AUTHORS
+  #       URL (JOURNAL)
+  #     date_and_location_column: DATE
+locale:
+  language: english
+  # last_updated: Last updated in
+  # month: month
+  # months: months
+  # year: year
+  # years: years
+  # present: present
+  # month_abbreviations:
+  #   - Jan
+  #   - Feb
+  #   - Mar
+  #   - Apr
+  #   - May
+  #   - June
+  #   - July
+  #   - Aug
+  #   - Sept
+  #   - Oct
+  #   - Nov
+  #   - Dec
+  # month_names:
+  #   - January
+  #   - February
+  #   - March
+  #   - April
+  #   - May
+  #   - June
+  #   - July
+  #   - August
+  #   - September
+  #   - October
+  #   - November
+  #   - December
+settings:
+  current_date: '2026-01-13'
+  render_command:
+    design:
+    locale:
+    typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.md
+    html_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.html
+    png_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.png
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: false
+  bold_keywords: []

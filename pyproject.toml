@@ -1,0 +1,9 @@
+[project]
+name = "resume-helper"
+version = "0.1.0"
+description = "A repository to create and version control a resume"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "rendercv>=2.8",
+]
